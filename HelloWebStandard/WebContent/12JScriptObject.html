@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 다루기 - 객체</title>
+</head>
+<body>
+<h1>자바스크립트 다루기 - 객체</h1>
+
+<button type="button" id="showImage">
+	이미지를 보여주세요</button>
+
+<button type="button" id="showWindow">
+	새창 띄우기(BOM)</button>
+	
+<button type="button" 
+	onclick="location.href='http://naver.com'">페이지 이동(BOM)</button>
+
+
+<script>
+	// 객체object
+	var sj = { name:"수지",kor:87,eng:65,mat:32,
+			   total: function(){
+				   return this.kor+this.eng+this.mat;
+			   }};
+	//객체속성 : 객체명.속성명
+	document.write("<p>"+ sj.name +"</p>");
+	document.write("<p>"+ sj.kor +"</p>");
+	document.write("<p>"+ sj.eng +"</p>");
+	document.write("<p>"+ sj.mat +"</p>");
+	//객체 함수 : 객체명.함수명
+	document.write("<p>"+sj.total()+"</p>");
+	
+	var sj2 = { name:"지현",kor:55,eng:75,mat:81,
+			   total: function(){
+				   return this.kor+this.eng+this.mat;
+			   }};
+	
+	// 게시판 목록의 일부를 객체로 정의
+	// 번호, 제목, 작성자, 작성일, 조회수,본문
+	var board = {bno:1,title:"시간은 금이라구",uid: "yeogiyong",
+				 regdate:"2018-01-16 12:45:12",reads:254,
+				 contents:"시간은 금이라구,...."};
+	
+	//연관배열을 목록(배열)형태로 정의: JSON
+	var obj1 = {a:1, b:2, c:3};
+	var obj2 = {a:{x:1, y:2, z:3},a:{x:1,y:2,z:3}};
+	var obj3 = {a:[{x:1, y:2, z:3},
+				   {x:1, y:2, z:3},
+				   {x:1, y:2, z:3}]}; //추천하는 유형
+	</script>
+	<script>
+		// DOM 다루기
+		function showNewImage(){
+			var img = document.createElement("img"); // <img>
+			// img 태그 생성
+			img.src = 
+				"https://www.google.co.kr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png";
+			// img 태그의 src 속성에 이미지 파일 지정
+			// <img src="~~~~">
+			var h1 = document.getElementsByTagName("h1");
+			// 문서내 h1요소를 수집함
+			h1[0].appendChild(img);
+			// 첫번째 h1 요소의 자식요소로 img 태그를 추가함
+			// <h1><img src=""></h1>
+		}
+		
+		function makeNewWin(){
+			// open(주소,이름,속성);
+			window.open("http://naver.com","",
+					"width=350,height=150,menubar=no,scrollbars=no,status=no,location=no");
+		}
+		
+		
+		// 버튼에 이미지 처리하기
+		var btn = document.getElementById("showImage");
+		btn.onclick = showNewImage;
+		
+		// 버튼 클릭시 새창 띄우기(비추천)
+		var btn2 = document.getElementById("showWindow");
+		btn2.onclick = makeNewWin;
+	
+	
+	</script>
+
+</body>
+</html>

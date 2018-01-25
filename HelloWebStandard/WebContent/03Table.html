@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+<meta charset="UTF-8">
+<title>HTML5 - 테이블 다루기</title>
+</head>
+<body>
+
+
+<h1>HTML5 - 테이블 다루기</h1>
+<table border="1" width="350px" cellspacing="0" cellpadding="5"> <!-- 표 작성 시작 -->
+	<tr>
+		<th>이름</th><th>국어</th><th>영어</th><th>수학</th>
+	</tr>
+	<tr>
+		<td>혜교</td><td>78</td><td>99</td><td>85</td>
+	</tr>
+	
+	<tr>
+		<td>지현</td><td>54</td><td>76</td><td>12</td>
+	</tr>
+	
+	<tr>
+		<td>수지</td><td>99</td><td>98</td><td>87</td>
+	</tr>
+	
+</table>
+
+<h1>HTML5 - 이미지 다루기</h1>
+		<p> <img src="https://www.google.co.kr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+		width="120" height="100"></p>
+		<p> <img src="http://thumbnail1.coupangcdn.com/thumbnails/remote/230x230ex/image/product/image/vendoritem/2017/04/27/3020264466/a9889b3b-991d-4f83-8d8f-58cd15669058.jpg"
+		width="150" height="100"></p>
+		<p> <img src="https://www.google.co.kr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+		width="130" height="120"></p>
+		<p> <img src="http://thumbnail1.coupangcdn.com/thumbnails/remote/230x230ex/image/product/image/vendoritem/2017/04/27/3020264466/a9889b3b-991d-4f83-8d8f-58cd15669058.jpg"
+		width="120" height="100"></p>
+		<p><a href="http://www.google.co.kr"><img border="1" alt="고라파덕이미지" src="http://cphoto.asiae.co.kr/listimglink/6/2014020409505490641_1.jpg"
+		width="120" height="100"></a></p>
+		<div>
+			<img src="./images/gorapaduk.jpg">
+		</div>
+
+<h1>HTML5 - 폼 다루기</h1>
+<form name="sjform" action="" method="post">
+	<div>이름<input type="text" name="name" required="required"></div>
+	<div>
+		<label for="kor">국어</label>
+		<input type="text" name="kor" id="kor" required="required">
+	</div>
+	
+	<div>
+		<label for="eng">영어</label>
+		<input type="text" name="eng" id="eng" required="required">
+	</div>
+	
+	<div>
+		<label for="mat">수학</label>
+		<input type="text" name="mat" id="mat" required="required">
+	</div>
+	
+	<div>
+		<input type="submit" value="입력완료">	
+		<input type="reset" value="다시입력">
+	
+		<button type="submit">입력완료</button>
+		<button type="reset">다시입력</button>
+	</div>
+</form>
+
+<form>
+	<div>
+		<label for="pwd">비밀번호</label>
+		<input type="password" name="pwd" id="pwd">
+	</div>
+	
+	<div>
+		<label for="memo">메모작성</label>
+		<textarea name="memo" id="memo" rows="7" cols="15"></textarea>
+	</div>
+	<div>
+		성별은?
+			  남자<input type="radio" name="gender" id="gender" value="m">
+			  여자<input type="radio" name="gender" id="gender" value="f">
+	</div>
+	<div>
+		취미는?
+			게임<input type="checkbox" name="hobby" value="game">
+			운동<input type="checkbox" name="hobby" value="exe">
+			여행<input type="checkbox" name="hobby" value="trip"> 
+			프로그래밍<input type="checkbox" name="hobby" value="bigdate">
+	</div>
+	<div>
+		거주하는 지역은? <select name="zipcode">
+						<option>-- 선택하세요 --</option>
+						<option>서울</option>
+						<option>경기</option>
+						<option>부산</option>
+					</select>
+	</div>
+	<div>
+		입력양식 제어 (readonly)
+		<input type="text" readonly="readonly" value="이 글이 보이나요">
+		입력양식 제어 (disabled)
+		<input type="text" disabled="disabled" value="이 글이 보이나요">
+		입력양식 제어 (placeholder)
+		<input type="text" placeholder="이 글이 보이나요">
+	
+	</div>
+	<div></div>
+</form>
+
+
+
+
+
+</body>
+</html>

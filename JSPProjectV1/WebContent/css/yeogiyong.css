@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{width:950px; margin:0 auto;
+	font-family: "맑은 고딕", verdana, 'malgun gothic';
+	font-size:11pt;}
+/* 본문영역의 크기를 적당하게 조절, 가운데 정렬 */
+	
+a:link{text-decoration: none; color:black; font-weight: bold; }
+a:visited{ color: black}
+a:hover{text-decoration: underline; color: green;}
+a:active{color : blue }
+/* 하이퍼링크에 대한 디자인 적용 */
+			
+ul { list-style-type: none; padding-bottom: 10px;}
+ul li{ float: left; margin-left:100px;}
+/* 상단 메뉴 디자인 */
+			
+hr{ border: 1px solid black; clear:both;}
+/* hr 태그 디자인*/
+			
+p{text-align: center; }
+/* 꼬릿말 영역 텍스트 정렬 */
+			
+#contents{min-height:500px;}
+/* 본문영역 디자인*/

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<title>CSS3 다루기 - BoxLayout</title>
+<style>
+	body{width:950px;margin:0 auto;} /* 가운데 정렬 */
+	
+	#hdr1{width:950px;height:100px;background-color: yellow;}
+	#cnt1{width:950px;height:350px;background-color: green;}
+	#ftr1{width:950px;height:100px;background-color: gold;clear:both;}
+	
+	#nav{width:200px;height:550px;background:orange;float:left;}
+	#cnt2{width:550px;height:550px;background:maroon;float:left;}
+	#asd{width:200px;height:550px;background:orange;float:left;}
+	
+	#box1{border:thick double grey;}
+	#box2{border-radius:15px;border:1px solid black;height:50px;}
+	#box3{width:350px;height:150px;background-color:red;margin:30px 0;
+		  box-shadow:10px 10px 0px grey;}
+	#box4{width:350px;height:150px;background-color:red;margin:30px 0;
+		  box-shadow:10px 10px 10px grey;}
+    #box5{width:350px;height:150px;background-color:green;margin:30px 0;
+    	  box-shadow:10px 10px #BCE55C,20px 20px #CEF279, 30px 30px #E4F7BA;}
+    
+    img{padding:20px;margin;20px;}
+    .shadow1{box-shadow:5px 5px 10px #000;}	  
+    
+</style>
+<style>
+	#grad1{height: 100px;background: linear-gradient(90deg,yellow,red);}
+	#grad2{height: 100px;
+		   background: linear-gradient(90deg,red,orange,yellow,green,blue,indigo,violet);}
+	#grad3{height: 300px; width:300px; background: radial-gradient(red,orange,yellow,green,blue,indigo,violet);}
+</style>
+
+
+
+</head>
+
+<body>
+<h1>CSS3 다루기 - BoxLayout1</h1>
+<div id="hdr1">header</div>
+<div id="cnt1">content</div>
+<div id="ftr1">footer</div>
+
+<h1>CSS3 다루기 - BoxLayout2</h1>
+<p>일반적으로 CSS BOX들은 위에서 아래방향으로 배치</p>
+<p>이러한 배치방향을 바꾸려면(좌-우/우-좌) float 속성을 사용</p>
+<p>좌-우/우-좌 배치방식을 원래의 위/아래 배치로 바꾸려면 clear 속성을 사용</p>
+<div id="hdr1">header</div>
+<div id="nav">nav</div>
+<div id="cnt2">content</div>
+<div id="asd">aside</div>
+<div id="ftr1">footer</div>
+
+<h1>CSS3 다루기 - 테두리</h1>
+<div id="box1">테두리 다루기</div>
+<div id="box2">둥근테두리 다루기</div>
+
+<h1>CSS3 다루기 - 그림자 박스</h1>
+<div id="box3">drop shadow Box3</div>
+<div id="box4">drop shadow Box4</div>
+<div id="box5">drop shodow Box5</div>
+
+<img src="./images/gorapaduk.jpg" width=150px class="shadow1">
+
+<h1>CSS3 다루기 - 그라디언트</h1>
+<div id="grad1">2색 선형 그라디언트</div>
+<div id="grad2">3색 선형 그라디언트</div>
+<div id="grad3">원형 그라디언트</div>
+
+
+</body>
+</html>

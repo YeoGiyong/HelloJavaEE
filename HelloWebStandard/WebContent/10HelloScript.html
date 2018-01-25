@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+	
+	<head>
+	<meta charset="UTF-8">
+	<title>JavaScript 다루기</title>
+		<script>
+			alert('head에서 실행');
+		</script>
+	</head>
+<body>
+	<h1>JavaScript 다루기</h1>
+	<button type="button" onclick="alert('버튼으로 실행')">여기를 클릭하세요!</button>
+
+	<button type="button" onclick="sayHello1()">안녕하세요!</button>
+
+
+	<!-- 스크립트 파일은 body 태그 맨 마지막 부분에 작성하자 -->
+	<script>
+		alert('body에서 실행')
+	</script>
+	<script>
+		var name="혜교"
+		var kor = 99;
+		var eng = 98;
+		var mat = 99;
+		var tot = kor + eng + mat;
+		var avg = tot/ 3 ;
+		
+		document.writeln("<p>"+ name + "</p>");
+		document.writeln(kor);
+		document.writeln(eng);
+		document.writeln(mat);
+		document.writeln(tot);
+		document.writeln(avg.toFixed(1));
+		
+		document.writeln(typeof name);
+		document.writeln(typeof kor);
+		document.writeln(typeof eng);
+		document.writeln(typeof mat);
+		document.writeln(typeof tot);
+		document.writeln(typeof avg);
+	</script>
+	<script>
+		//함수 호출
+		sayHello1();	
+	
+		//함수 정의 - head 태그에 정의하는 것도 좋음
+		function sayHello1(){
+			document.write("<p>안녕하세요~ 자바스크립트!</p>");
+		}
+		function sayHello2(name){
+			var msg = "<p>안녕하세요~ " + name + "</p>";
+			document.write(msg);
+		}
+		function sayHello3(){
+			var msg = "<p>안녕하세요~ 자바스크립트!</p>";
+			return msg;
+		}
+		function sayHello4(name){
+			var msg = "<p>안녕하세요~" + name + "</p>";
+			return msg;
+		}
+		
+		
+		
+		//함수 호출
+		sayHello1();
+		sayHello2("HTML5");
+		sayHello2("CSS3");
+		sayHello2(9876);
+		
+		//반환값이 있는 함수 처리
+		var msg = sayHello3();
+		document.write(msg);
+		document.write(msg);
+	
+		msg = sayHello4("java8");	
+	</script>
+	<script>
+		//배열 다루기
+		var names = ["혜교", "지현","수지"];	 //추천
+		var korList = new Array(99,98,99);
+		
+		for(var i =0;i<names.length;++i){
+			document.write("<p>" + names[i] + "</p>");
+		}
+		for(var j=0;j<korList.length;++j){
+			document.write("<p>" + korList[j] + "</p>");
+		}
+	</script>
+	<script>
+		//연관배열 다루기 - 배열 각 요소에 이름 붙여 사용하기
+		var sj = {name:"혜교",kor:99,eng:98,mat:99};	
+		document.write("<p>" + sj["name"] + "</p>");
+		document.write("<p>" + sj.eng + "</p>");
+	
+		// 반복문을 이용해 연관배열 출력하기
+		for(var key in sj){
+			document.write("<p>" + sj[key] + "</p>");
+		}	
+		
+	</script>
+	
+	
+	
+</body>
+</html>

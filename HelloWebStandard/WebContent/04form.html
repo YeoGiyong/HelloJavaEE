@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5b.pdf(p107~p118)</title>
+</head>
+<body>
+	
+	<h3>선택사항을 직접 입력하세요.</h3>
+	<form>
+		<label>전공 분야를 입력하세요.
+			<input type="text" list="majorlist" name="major">
+			<datalist id="majorlist">
+				<option value="Software">소프트웨어</option>
+				<option value="Robot">로봇</option>
+				<option value="System">시스템</option>
+				<option value="Service">서비스</option>
+				<option value="Education">교육</option>			
+			</datalist>
+			<p></p>
+			<input type="submit" value="완료">
+			<input type="reset" value="다시작성">
+		</label>	
+	</form>
+	
+	<form>
+		<h3>오늘 날씨 입력.</h3>
+			Today : <input type="date" name="today">
+		<h3>프로젝트 수행 기간</h3>
+			From : <input type="date" name="from" min="2016-03-01" max="2016-12-31">
+			To : <input type="date" name="to" min="2018-03-01" max="2018-06-30">
+		<p></p>
+		<input type="submit" value="제출">
+		<input type="reset" value="다시작성">
+	</form>
+	
+	<form>
+		<h3>생일(년/월) 입력</h3>
+		생일 : <input type="month" name="birth">
+		<h3>주간 계획(년/주) 입력</h3>
+		주간 계획 : <input type="week" name="weekeend">	
+		<p></p>
+		<input type ="submit" value="제출">
+		<input type ="reset" value="다시작성">
+	</form>
+	
+	<form>
+		<h3>현재 시간 입력</h3>
+		Time : <input type="time" name="Now">
+		<h3>생일(년도, 월, 일, 시간) 입력</h3>	
+		Birthday : <input type="datetime-local" name="bdaytime">
+		<p></p>
+		<input type="submit" value="제출">
+		<input type="reset" value="다시작성">
+	</form>
+	
+	<form>
+		<h3>원하는 색상을 선택하세요.</h3>
+		<input type="color" name="color_value" value="#00DDff">
+		<p></p>
+		<input type="submit" value="선택완료">
+		<input type="reset" value="다시작성">
+	</form>
+	
+	<form>
+		<h3>나이를 입력하세요.</h3>
+		<input type="number" name="count" min="1" max="130">
+		<p></p>
+		<input type="submit" value="완료">
+		<input type="reset" value="초기화">
+	</form>
+	
+	<form>
+		<h3>0-100 범위에서 원하는 지점을 선택하세요.</h3>
+		<input type="range" name="point" min="0" max="100">
+		<p></p>
+		<input type="submit" value="완료">
+		<input type="reset" value="초기화">
+	</form>
+	
+	<form>
+		<h3>이메일을 정확하게 입력하세요.</h3>
+		이메일 : <input type="email" name="myemail">
+		<p></p>
+		<input type="submit" value="제출">
+		<input type="reset" value="다시작성">
+	</form>
+	
+	<form>
+		<h3>홈페이지 주소를 입력하세요.</h3>
+		홈페이지 : <input type="url" name="myhome">
+		<p></p>
+		<input type="submit" value="제출">
+		<input type="reset" value="다시작성">
+	</form>
+	
+	<form>
+		<h3>검색어를 입력하세요.</h3>
+		구글검색 : <input type="search" name="googlesearch">
+		<p></p>
+		<input type="submit" value="제출">
+		<input type="reset" value="다시작성">
+	</form>
+	
+	<form>
+		<h3>학습량 그래프</h3>
+		홍민성 : <meter min="0" max="100" optimum="50" value="60">60 out of 100</mater><br>
+		송지효 : <meter low="0.3" high="0.5" value="0.22">22%</meter><br>
+		이민정 : <meter low="0.25" high="0.75" optimum="0.8" value="0.2">20%</meter>
+		<p></p>
+		<h3>작업 진행율</h3>
+		초기 작업 : <progress value="22" max="100" title="진행율">22%</progress><br>
+		중간 작업 : <progress value="0.77" max="1">77%</progress><br>
+		다음 작업 : <progress value="0.98" max="1">98%</progress><br>	
+	</form>
+
+</body>
+</html>
